@@ -1,5 +1,5 @@
-ballin-octo-cyril
-=================
+ballin-octo-cyril.js
+====================
 
 A simple JavaScript img src switcher for high density displays. The name was suggested by GitHub.
 
