@@ -16,18 +16,18 @@ var retina;
 retina = false;
 
 $(document).ready(function() {
-  return lazyload();
+  return boc();
 });
 
 $(window).on("load", function() {
-  return lazyload();
+  return boc();
 });
 
 $(window).on("resize", function() {
-  return lazyload();
+  return boc();
 });
 
-window.lazyload = function() {
+window.boc = function() {
   var attr_src;
   retina = window.devicePixelRatio > 1;
   if (retina === true) {
