@@ -7,13 +7,14 @@
  * If the script detects a device with a higher pixel density window.devicePixelRatio than 1,
  * it switches the image src to a high resolution image src and back.
  *
- * Usage: <img src="path/to/low/res.png" class="ballin-octo-cyril" data-src="path/to/low/res.png" data-hires="path/to/high/res.png" />
+ * Usage: <img src="path/to/low/res.png" class="boc" data-boc-hires="path/to/high/res.png" />
  *
 */
 
 var retina, _operate = false;
 
-$(document).ready(function() {
+$(document).ready( function() {
+  setBocAttributes();
   return boc();
 });
 
@@ -41,3 +42,9 @@ window.boc = function() {
     return $( this ).attr( "src", $( this ).data( attr_src ) );
   });
 };
+
+setBocAttributes = function() {
+  return $( ".boc" ).each( function() {
+    return $( this ).data( "boc-lowres", $( this ).attr( "src" ) );
+  });
+}
