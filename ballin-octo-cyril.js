@@ -11,10 +11,7 @@
  *
 */
 
-var retina;
 var retina, _operate = false;
-
-retina = false;
 
 $(document).ready(function() {
   return boc();
