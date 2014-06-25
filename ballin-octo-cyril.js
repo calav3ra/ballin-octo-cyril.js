@@ -1,6 +1,6 @@
 /*
- * ballin-octo-cyril.js
- *   Stefan Große <stefan@syscfg.net>, 2014-06-24
+ * ballin-octo-cyril.js 0.2
+ *   Stefan Große <stefan@syscfg.net>, 2014-06-25
  *
  * A simple JavaScript img src switcher for high density displays. The name was suggested by GitHub.
  *
