@@ -12,6 +12,7 @@
 */
 
 var retina;
+var retina, _operate = false;
 
 retina = false;
 
@@ -23,9 +24,13 @@ $(window).on("load", function() {
   return boc();
 });
 
-$(window).on("resize", function() {
-  return boc();
-});
+$( window ).resize( function() {
+  if( _operate !== false )
+    clearTimeout( _operate );
+    _operate = setTimeout( function() { 
+      return boc();
+  }, 200 );
+})
 
 window.boc = function() {
   var attr_src;
