@@ -30,14 +30,14 @@ $( window ).resize( function() {
 })
 
 window.boc = function() {
-  var attr_src;
+  attr_src = "";
   retina = window.devicePixelRatio > 1;
   if (retina === true) {
-    attr_src = "hires";
+    attr_src = "boc-hires";
   } else {
-    attr_src = "src";
+    attr_src = "boc-lowres";
   }
-  return $(".ballin-octo-cyril").each(function() {
-    return $(this).attr("src", $(this).data(attr_src));
+  return $( ".boc" ).each( function() {
+    return $( this ).attr( "src", $( this ).data( attr_src ) );
   });
 };
